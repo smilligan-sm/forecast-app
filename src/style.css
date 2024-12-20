@@ -103,10 +103,9 @@ main {
   color: rgb(110, 49, 138);
 }
 
-.weather-app-icon img {
+.weather-app-icon {
   display: flex;
-  max-height: 70px;
-  margin-top: 10px;
+  height: 70px;
 }
 
 .weather-app-unit {
