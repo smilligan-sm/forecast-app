@@ -10,9 +10,7 @@ function refreshWeather(response) {
   let feelsLikeElement = document.querySelector("#feelsLike");
   let feelsLike =
     Math.round(response.data.temperature.feels_like * 10.0) / 10.0;
-
   let iconElement = document.querySelector("#icon");
-  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
 
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
@@ -21,6 +19,7 @@ function refreshWeather(response) {
   temperatureElement.innerHTML = Math.round(temperature);
   timeElement.innerHTML = formatDate(date);
   feelsLikeElement.innerHTML = `Feels like ${feelsLike}°C`;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
 }
 
 function formatDate(date) {
