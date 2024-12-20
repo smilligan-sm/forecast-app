@@ -1,5 +1,5 @@
 body {
-  background-color: gray;
+  background: linear-gradient(to right, rgb(221, 214, 243), rgb(250, 172, 168));
   font-family: "Lexend", serif;
 }
 
@@ -9,6 +9,11 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+a {
+  color: rgb(165, 111, 190);
+  text-decoration: none;
+  font-weight: bold;
+}
 .weather-app {
   background: white;
   max-width: 600px;
@@ -16,4 +21,38 @@ h1 {
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
   padding: 30px;
+  text-align: center;
+}
+header {
+  border-bottom: 1px solid rgb(240, 238, 247);
+  padding: 0 0 30px 0;
+}
+.search-form-input {
+  font-family: "Lexend", serif;
+  background-color: rgb(240, 238, 247);
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+
+.search-form-button {
+  font-family: "Lexend", serif;
+  background-color: rgb(165, 111, 190);
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-left: 5px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+footer {
+  border-top: 1px solid rgb(240, 238, 247);
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
 }
