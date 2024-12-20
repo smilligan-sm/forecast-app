@@ -89,6 +89,9 @@ main {
   font-weight: 500;
 }
 
+.description {
+  margin-bottom: 20px;
+}
 .weather-app-details strong {
   color: rgb(155, 89, 185);
 }
