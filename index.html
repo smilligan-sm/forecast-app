@@ -29,7 +29,7 @@
           </form>
         </header>
         <main>
-          <div class="weather-app-date">Friday 14:50</div>
+          <div class="weather-app-date" id="time"></div>
           <div class="weather-app-data">
             <div>
               <h1 class="weather-app-city" id="city"></h1>
@@ -38,11 +38,12 @@
                 <div class="weather-app-temperature" id="temperature"></div>
                 <div class="weather-app-unit">°C</div>
               </div>
+              <div class="feels-like" id="feelsLike"></div>
               <p class="weather-app-details">
-                Sunny
+                <span id="description"></span>
                 <br />
-                Humidity: <strong>86%</strong>, Wind Speed:
-                <strong>4.14km/h</strong>
+                Humidity: <strong id="humidity"></strong>, Wind Speed:
+                <strong id="wind-speed"></strong>
               </p>
             </div>
             <div>

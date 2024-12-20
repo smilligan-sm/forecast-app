@@ -75,6 +75,13 @@ main {
   line-height: 56px;
 }
 
+.feels-like {
+  font-size: 16px;
+  color: rgb(155, 89, 185);
+  line-height: 24px;
+  font-weight: 600;
+}
+
 .weather-app-details {
   font-size: 16px;
   color: rgba(39, 33, 66, 0.7);
