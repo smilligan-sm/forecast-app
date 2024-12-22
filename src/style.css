@@ -6,7 +6,7 @@ body {
 .container {
   background: linear-gradient(to right, rgb(221, 214, 243), rgb(180, 94, 214));
   max-width: 750px;
-  margin: 45px auto;
+  margin: 15px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
   padding: 30px;
