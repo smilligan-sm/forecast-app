@@ -53,6 +53,13 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
+  if (hours < 12) {
+    minutes = `${minutes}am`;
+  } else {
+    minutes = `${minutes}pm`;
+    hours = hours % 12 || 12;
+  }
+
   return `${day} ${hours}:${minutes}`;
 }
 

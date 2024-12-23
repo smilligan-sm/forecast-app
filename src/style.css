@@ -52,7 +52,7 @@ header {
 }
 
 main {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .weather-app-date {
@@ -90,6 +90,14 @@ main {
   font-weight: 500;
 }
 
+.weather-app-details .description {
+  font-weight: 700;
+}
+
+.weather-app-details .description-details {
+  font-size: 12.5px;
+}
+
 .weather-app-details strong {
   color: rgb(155, 89, 185);
 }
@@ -119,6 +127,9 @@ main {
   max-height: 200px;
   border-radius: 8px;
   margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-top: 60px;
 }
 
 .weather-forecast {
