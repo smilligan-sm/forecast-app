@@ -11,6 +11,7 @@ function refreshWeather(response) {
   let feelsLike =
     Math.round(response.data.temperature.feels_like * 10.0) / 10.0;
   let iconElement = document.querySelector("#icon");
+  let imgElement = document.querySelector("#weather-app-img");
 
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
@@ -20,6 +21,16 @@ function refreshWeather(response) {
   timeElement.innerHTML = formatDate(date);
   feelsLikeElement.innerHTML = `Feels like ${feelsLike}°C`;
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
+
+  if (temperature >= 27) {
+    imgElement.innerHTML = `<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/377/original/undraw_beach-day_nedh.png?1734987041" alt="weather" class="weather-app-image"/>`;
+  } else if (temperature >= 20 && temperature < 27) {
+    imgElement.innerHTML = `<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/379/original/undraw_among-nature_2f9e.png?1734987061" alt="weather" class="weather-app-image"/>`;
+  } else if (temperature >= 10 && temperature < 20) {
+    imgElement.innerHTML = `<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/378/original/undraw_relaxing-at-home_vmps.png?1734987051" alt="weather" class="weather-app-image"/>`;
+  } else {
+    imgElement.innerHTML = `<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/380/original/undraw_winter-designer_a6kq.png?1734987072" alt="weather" class="weather-app-image"/>`;
+  }
 
   getForecast(response.data.city);
 }
