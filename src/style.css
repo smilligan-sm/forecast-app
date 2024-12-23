@@ -33,7 +33,7 @@ header {
   background-color: rgb(240, 238, 247);
   border: none;
   border-radius: 6px;
-  width: 80%;
+  width: 70%;
   padding: 15px 20px;
   font-size: 16px;
 }
@@ -48,6 +48,7 @@ header {
   color: white;
   font-size: 13px;
   font-weight: 500;
+  width: 20%;
 }
 
 main {
